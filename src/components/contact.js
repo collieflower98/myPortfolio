@@ -5,39 +5,18 @@ class Contact extends Component{
     render(){
         return(
                 <div className ="contact-body">
-                    <Grid className = "contact-grid">
-                        <Cell col={6}>
-                            <h2>Jethro Zhou</h2>
-                            <img
-                            src ="https://i.pinimg.com/originals/89/b1/30/89b13055a93a09796e8d4b99e9bc08d8.png"
+                    <div className = "contact-content">
+                        <h1>Contact Info</h1>
+                        <hr/>
+                        <h2>Jethro Zhou</h2>     
+                        <img
+                            src ="https://i.imgur.com/049iJWm.jpg"
                             alt ="avatar"
-                            style={{height: '250px'}}
-                            />
-                            
-                        </Cell>
-                        <Cell col={6}>
-                            <h2>Contact Me</h2>
-                            <hr/>
-
-                            <div className ="contact-list">
-                            <List>
-                                <ListItem>
-                                    <ListItemContent style ={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                        <i className = "fa fa-phone-square" aria-hideen="true"/>
-                                        (765) 409-6163</ListItemContent>
-                                 </ListItem>
-                                 <ListItem>
-                                    <ListItemContent style ={{fontSize: '30px', fontFamily: 'Anton'}}>
-                                        <i className = "fa fa-envelope" aria-hideen="true" />
-                                        zhou661@purdue.edu</ListItemContent>
-                                 </ListItem>
-                                 
-                            </List>
-                            </div>
-
-                            
-                        </Cell>
-                    </Grid>
+                            className ="contact-img"
+                        /> 
+                        <h2>Phone: (765) 409-6163</h2>
+                        <h2>Email: jethro.zhou@LIVE.com</h2>
+                    </div>
                 </div>
             
         )

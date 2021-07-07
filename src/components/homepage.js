@@ -14,14 +14,14 @@ class Home extends Component{
                             <h1>Jethro Zhou</h1>
                             </div>
                             <img
-                            src ="https://i.pinimg.com/originals/89/b1/30/89b13055a93a09796e8d4b99e9bc08d8.png"
+                            src ="https://i.imgur.com/XtRX22T.png"
                             alt ="avatar"
                             className ="avatar-img"
                             />
                             <div className ="banner-text">
                                 <h1>Full Stack Web Developer</h1>
                                 <hr/>
-                                <p>HTML | CSS | JavaScript | React.js | Node.js </p>
+                                <p>HTML/CSS | JavaScript | React.js | Node.js | Java | Vue.js | SQL </p>
                                 <div className ="social-links">
                                     {/*LinkedIn */}
                                     <a href="https://www.linkedin.com/in/jethro-zhou-8107a61a2" rel="noopener noreferrer" target ="_blank">

@@ -26,6 +26,19 @@ class Project extends Component{
                 </CardMenu>
             </Card>
             <Card shadow ={5} style = {{midWidth: '450', margin: 'auto'}}>
+                <CardTitle style ={{color: '#fff', height : '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png) center/cover'}}>Eternal Tower</CardTitle>
+                <CardText style={{height:'75px'}}>
+                    Project for CS407 at Purdue University, webapp where users can create an account, play a roguelike browser game, compete on the leaderboard, and chat with other users.
+                </CardText>
+                <CardActions border>
+                    <Button href="https://github.com/collieflower98/EternalTower" rel="noopener noreferrer" target ="_blank" colored>Github</Button>
+                    <Button href="https://eternal-tower.firebaseapp.com/" rel="noopener noreferrer" target ="_blank" colored>Link</Button>
+                </CardActions>
+                <CardMenu style ={{color: '#fff'}}>
+                    <IconButton name ="share"/>
+                </CardMenu>
+            </Card>
+            <Card shadow ={5} style = {{midWidth: '450', margin: 'auto'}}>
             <CardTitle style ={{color: '#fff', height : '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png) center/cover'}}>My Portfolio</CardTitle>
             <CardText style={{height:'75px'}}>
                 Website for my portfolio of my projects, as well as my resume, contact information, and information about myself.
@@ -81,12 +94,13 @@ class Project extends Component{
     render(){
         return(
                 <div className = "category-tabs">
+                    <div className = "tabs-header">
                     <Tabs activeTab= {this.state.activeTab} onChange = {(tabId)=> this.setState({activeTab: tabId})} ripple>
                         <Tab>React</Tab>
                         <Tab>Java</Tab>
                         <Tab>HTML/CSS</Tab>
                     </Tabs>
-                    
+                    </div>
                         <Grid >
                             <Cell col={12}>
                                 <div className ="content">{this.toggleCategories()}</div>
